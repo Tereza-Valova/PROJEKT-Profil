@@ -1,6 +1,13 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -12,8 +19,73 @@ html { box-sizing: border-box; }
 	facebook   #3b5998
 	twitter    #1da1f2
 */
-
-
 body {
-	background-color: #bdc3c7;
+  background-color: #bdc3c7;
 }
+
+.profil,
+img {
+  width: 300px;
+}
+
+.profil {
+  background-color: #31363b;
+}
+
+.logo {
+  background-color: #b52e82;
+  border-radius: 100%;
+  position: relative;
+  left: 70%;
+  bottom: 25px;
+  width: 50px;
+}
+
+.obsah {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 20px;
+}
+  
+
+.obsah h1 {
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+
+.obsah p {
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.odkazy a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+ li {
+  display: block;
+}
+
+.odkazy  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+
+.portfolio ul {
+  width: 100%;
+}
+
+.facebook,
+.twitter  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+}
+
