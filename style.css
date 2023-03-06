@@ -19,73 +19,101 @@ html {
 	facebook   #3b5998
 	twitter    #1da1f2
 */
-body {
-  background-color: #bdc3c7;
-}
 
-.profil,
-img {
-  width: 300px;
+body {
+  background-color:#bdc3c7;
 }
 
 .profil {
-  background-color: #31363b;
+  width:300px;
+  height:660px;
+  margin:20px 0 0 20px;  
+  background-color:#31363b;
+  box-shadow: 0px 0px 38px -5px rgba(0,0,0,0.75);
 }
 
-.logo {
-  background-color: #b52e82;
-  border-radius: 100%;
-  position: relative;
-  left: 70%;
-  bottom: 25px;
-  width: 50px;
+.hlavicka {
+  position:relative;   
 }
 
-.obsah {
-  font-family: "Montserrat", sans-serif;
-  padding: 0 20px;
+.foto {
+  width:300px;
+  height:30%;
 }
   
-
-.obsah h1 {
-  color: rgb(255, 255, 255, 0.8);
-  font-size: 30px;
+.logo {
+  position:absolute; 
+  bottom:-20px;  
+  right:35px;
+  background-color:#b92e81;
+  border-radius:100%;
 }
 
-.obsah p {
-  color: rgb(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-weight: 500;
+.obsah{  
+  text-align:block;
+}
+
+.jmeno {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  padding: 20px 20px 10px 20px;
+  font-size:25px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#bdc3c7;
+  padding: 10px 20px;
+  margin:0;  
+}
+
+.odkazy {
+   margin:24px 0 0 0;
+   padding:0px;
+}
+
+.odkazy li {
+   display: inline-block;
+   font-family:'Montserrat', sans-serif;
+   text-transform:uppercase;
+   margin:0;
+   padding:0;
 }
 
 .odkazy a {
-  text-decoration: none;
-  color: rgb(255, 255, 255, 0.8);
-  text-transform: uppercase;
+  text-decoration:none;
+  color:#bdc3c7;
+  display:block;
+  padding:13px;
+  text-align:center;
+  background-color:#31363b; 
+  border-top:1px solid #3f464d;
+  border-right:1px solid #3f464d;
 }
 
- li {
-  display: block;
+.odkazy a:hover {
+  color:white;
 }
 
-.odkazy  {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  text-align: center;
+.portfolio {
+  width:100%;
 }
 
-.portfolio ul {
-  width: 100%;
+.portfolio a:hover {
+  background-color:#e74c2e;
 }
 
-.facebook,
-.twitter  {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-
+.facebook,.twitter{
+  width:50%;
+  float: left;
 }
+
+.facebook a:hover{
+  background-color:#3b5998;
+}
+
+.twitter a:hover {
+  background-color:#1da1f2;
+}
+
 
